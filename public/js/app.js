@@ -40,17 +40,17 @@ let showcaseData;
       href.href = link.url;
       href.target = "_blanc";
 
-      // add link to button
-      button.appendChild(href);
-
       // Add text to button
       button.innerText = link.name;
 
       // Add class to button
       button.classList.add("projectButton");
 
+      // Add button to link
+      href.appendChild(button);
+
       // Add button to description
-      projectDesc.appendChild(button);
+      projectDesc.appendChild(href);
     });
 
     // Add title to project
