@@ -22,6 +22,7 @@ let showcaseData;
 
     // Create description
     let projectDesc = document.createElement("p");
+    // file deepcode ignore DOMXSS: The input we are getting are from our own file.
     projectDesc.innerHTML = project.desc;
     projectDesc.style.width = "20vw";
 
