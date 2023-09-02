@@ -19,6 +19,16 @@
           "url": "https://github.com/lucasammer/easy-api"
         }
       ]
+    },
+    {
+      "name": "Website builder",
+      "desc": "Create your website with html and make it available to the public.",
+      "links": [
+        {
+          "name": "Get started",
+          "url": "https://web.bread.com.de/"
+        }
+      ]
     }
   ],
   "tools": [
