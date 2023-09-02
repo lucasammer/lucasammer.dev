@@ -89,6 +89,10 @@ body {
   margin: 5px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .projectButton {
   background-color: white;
   border: none;
