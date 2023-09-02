@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "name": "Butters",
+      "desc": "The butters programming language is a language that is made in c#, its runtime and compiler are highly customisable since it first outputs to a json like structure to then be further compiled or ran",
+      "links": [
+        {
+          "name": "Explore project",
+          "url": "https://github.com/lucasammer/butters"
+        }
+      ]
+    },
+    {
+      "name": "easy-api",
+      "desc": "Easy api is a framework to very easily and intuitively build an API.",
+      "links": [
+        {
+          "name": "View on github",
+          "url": "https://github.com/lucasammer/easy-api"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "Node.js",
+      "img": "public/assets/node.png"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#header {
+  background-color: purple;
+  background-image: url("../assets/mountains2.png");
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+#header #name {
+  margin: 0;
+  font-size: 15vh;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+
+#header #desc {
+  margin: 0;
+  font-size: 5vh;
+  font-size: 3em;
+  position: absolute;
+  right: 10%;
+  top: 37.5%;
+}
+
+#content {
+  color: antiquewhite;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-150px);
+  background-color: black;
+  width: 90vw;
+  height: 1000px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#MyWorkButton {
+  height: 75px;
+  width: 200px;
+  font-size: 25px;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  outline: 0px palevioletred solid;
+  transition: 300ms ease-in;
+}
+
+#MyWorkButton:hover {
+  transition: 150ms ease-in;
+  outline: 7.5px palevioletred solid;
+}
+
+#top {
+  padding: 45px;
+  padding-top: 40px;
+}
+
+#work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#workTitle {
+  text-align: center;
+  width: 80vw;
+  font-weight: 500;
+}
+
+#showcase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: block;
+  flex: 1 0 21%;
+  margin: 5px;
+}
+
+.projectButton {
+  background-color: white;
+  border: none;
+  width: fit-content;
+  height: 50px;
+  border-radius: 15px;
+  filter: drop-shadow(0px 0px 4px purple);
+  transition: 200ms ease-out;
+}
+
+.projectButton:hover {
+  filter: drop-shadow(10px 10px 4px purple);
+}
