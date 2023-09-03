@@ -62,3 +62,25 @@ let showcaseData;
     document.getElementById("work").appendChild(projectContainer);
   });
 })();
+
+const switchTheme = () => {
+  const r = document.querySelector("body");
+  let h = document.querySelector(":root");
+  h = getComputedStyle(h);
+  let rs = getComputedStyle(r);
+  if (rs.getPropertyValue("--theme") == "light") {
+    r.style.setProperty("--theme", "dark");
+    r.style.setProperty("--text-color", h.getPropertyValue("--default-text"));
+    r.style.setProperty(
+      "--background-color",
+      h.getPropertyValue("--default-back")
+    );
+  } else {
+    r.style.setProperty("--theme", "light");
+    r.style.setProperty("--text-color", h.getPropertyValue("--light-text"));
+    r.style.setProperty(
+      "--background-color",
+      h.getPropertyValue("--light-back")
+    );
+  }
+};
