@@ -40,5 +40,45 @@
     </div>
     <!-- Import scripts after everything loaded -->
     <script src="public/js/app.js"></script>
+
+    <!-- Temporary work in progress warning -->
+    <div id="warningWrapper">
+      <div id="wipWarn">
+        <h1>Warning</h1>
+        <h2>This site is a work in progress</h2>
+        <a href="old.html">Visit older version</a>
+        <br />
+        <button onclick="hideWarning()">Continue</button>
+        <script>
+          const hideWarning = () => {
+            document.getElementById("warningWrapper").style = "display: none;";
+          };
+        </script>
+        <style>
+          #wipWarn {
+            width: max-content;
+            height: max-content;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: white;
+            border-radius: 30px;
+            text-align: center;
+            padding: 20px;
+          }
+
+          #warningWrapper {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+          }
+        </style>
+      </div>
+    </div>
   </body>
 </html>
