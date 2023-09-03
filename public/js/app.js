@@ -23,12 +23,8 @@ let showcaseData;
     // Create description
     let projectDesc = document.createElement("p");
     // file deepcode ignore DOMXSS: The input we are getting are from our own file.
-    projectDesc.innerHTML = project.desc;
+    projectDesc.innerHTML = project.desc + "<br /><br />";
     projectDesc.style.width = "20vw";
-
-    // Create and add newline
-    let newline = document.createElement("br");
-    projectDesc.appendChild(newline);
 
     // Create buttons
     project.links.forEach((link) => {
@@ -62,3 +58,25 @@ let showcaseData;
     document.getElementById("work").appendChild(projectContainer);
   });
 })();
+
+const switchTheme = () => {
+  const r = document.querySelector("body");
+  let h = document.querySelector(":root");
+  h = getComputedStyle(h);
+  let rs = getComputedStyle(r);
+  if (rs.getPropertyValue("--theme") == "light") {
+    r.style.setProperty("--theme", "dark");
+    r.style.setProperty("--text-color", h.getPropertyValue("--default-text"));
+    r.style.setProperty(
+      "--background-color",
+      h.getPropertyValue("--default-back")
+    );
+  } else {
+    r.style.setProperty("--theme", "light");
+    r.style.setProperty("--text-color", h.getPropertyValue("--light-text"));
+    r.style.setProperty(
+      "--background-color",
+      h.getPropertyValue("--light-back")
+    );
+  }
+};
