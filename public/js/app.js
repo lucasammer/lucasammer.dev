@@ -23,12 +23,8 @@ let showcaseData;
     // Create description
     let projectDesc = document.createElement("p");
     // file deepcode ignore DOMXSS: The input we are getting are from our own file.
-    projectDesc.innerHTML = project.desc;
+    projectDesc.innerHTML = project.desc + "<br /><br />";
     projectDesc.style.width = "20vw";
-
-    // Create and add newline
-    let newline = document.createElement("br");
-    projectDesc.appendChild(newline);
 
     // Create buttons
     project.links.forEach((link) => {
