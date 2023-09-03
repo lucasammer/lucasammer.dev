@@ -24,7 +24,6 @@ let showcaseData;
     let projectDesc = document.createElement("p");
     // file deepcode ignore DOMXSS: The input we are getting are from our own file.
     projectDesc.innerHTML = project.desc + "<br /><br />";
-    projectDesc.style.width = "20vw";
 
     // Create buttons
     project.links.forEach((link) => {
