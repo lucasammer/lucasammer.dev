@@ -33,7 +33,29 @@
         </div>
         <div id="contact">
           <h2>Contact me</h2>
-          <!-- Show various ways to contact me -->
+          <div id="contactContent">
+            <form action="#contact">
+              <input
+                type="text"
+                name="subject"
+                id="subjectField"
+                placeholder="subject"
+                required
+              />
+              <input
+                type="text"
+                value="sendMail"
+                name="do"
+                style="display: none"
+                required
+              />
+              <button id="mailButton">e-mail</button>
+            </form>
+            <hr />
+            <a href="https://discord.gg/YQNMCUCfYb" target="_blank"
+              ><button id="discordButton">discord</button></a
+            >
+          </div>
         </div>
       </div>
       <div id="footer">

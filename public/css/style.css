@@ -1,5 +1,6 @@
 :root {
   --default-text: antiquewhite;
+  --text-accent: hsl(0, 0%, 14%);
   --default-back: black;
   --light-text: rgb(0, 0, 36);
   --light-back: white;
@@ -15,6 +16,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
+    --text-accent: whitesmoke;
     --theme: light;
     --text-color: var(--light-text);
     --background-color: var(--light-back);
@@ -179,4 +181,50 @@ button {
 
 #contact {
   text-align: center;
+}
+
+#contactContent {
+  width: 50vw;
+  background-color: var(--background-color);
+  border: 1px whitesmoke solid;
+  filter: drop-shadow(0px 0px 10px var(--text-color));
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: max-content;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+#subjectField {
+  width: 75%;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  border-radius: 5px;
+  border: var(--text-accent) 2px solid;
+  min-width: 90px;
+}
+
+#mailButton,
+#discordButton {
+  width: 20%;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: var(--text-accent);
+  border: none;
+  border-radius: 5px;
+  transition: 150ms ease-out;
+  min-width: 90px;
+}
+
+#mailButton:hover {
+  filter: drop-shadow(0px 0px 5px var(--text-color));
+}
+
+#discordButton:hover {
+  filter: drop-shadow(0px 0px 5px blue);
 }

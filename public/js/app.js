@@ -79,3 +79,14 @@ const switchTheme = () => {
     );
   }
 };
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+if (urlParams.get("do") == "sendMail") {
+  window.location.href = `mailto:me@lucasammer.com?subject=${urlParams.get(
+    "subject"
+  )}&body=Hello%20there%2C%0D%0A%0D%0AI%20would%20like%20to%20contact%20you%20about%20${urlParams.get(
+    "subject"
+  )}.%0D%0A%0D%0AKind%20regards%2C%0D%0A%5BGENERIC%20NAME%5D`;
+}
